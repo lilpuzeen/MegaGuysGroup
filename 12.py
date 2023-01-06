@@ -1,0 +1,12 @@
+s = "3" * 70
+
+while ("333" in s) or ("7777" in s):
+	if "333" in s:
+		s = s.replace("333", "77", 1)
+	else:
+		s = s.replace("77777", "7", 1)
+
+k = 0
+for item in s:
+	k = k + int(item)
+print(k)
