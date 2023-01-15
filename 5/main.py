@@ -24,3 +24,29 @@
 #         print(N)
 #         break
 
+# 47209
+# for n in range(1, 1000):
+# 	r = bin(n)[2:]
+# 	digits = list(r)
+# 	if digits.count("1") % 2 == 0:
+# 		digits.append("0")
+# 		digits[0], digits[1] = "1", "0"
+# 	elif digits.count("1") % 2 != 0:
+# 		digits.append("1")
+# 		digits[0], digits[1] = "1", "1"
+# 	result = int("".join(digits), 2)
+# 	if result > 40:
+# 		print(n)
+# 		break
+
+# 47209 2nd
+# for n in range(1, 1000):
+# 	r = bin(n)[2:]
+# 	if r.count("1") % 2 == 0:
+# 		r = "10" + r[2:] + "0"
+# 	elif r.count("1") % 2 != 0:
+# 		r = "11" + r[2:] + "1"
+# 	result = int(r, 2)
+# 	if result > 40:
+# 		print(n)
+# 		break

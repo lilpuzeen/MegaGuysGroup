@@ -1,12 +1,15 @@
-s = "arman"
-arr = [1, 2, 3, 4]
+# s = "Grisha Misha Ruslan"
+# # slices => <str>[start:stop:step=1]
+# print(s[0])  # -> G
+# print(s[-1])  # -> n
+# print(s[1:4])  # -> ris
+# print(s[::2])  # only %2 elements
+# print(s[::-1])  # <=> reverse
+# print(s[:2])  # first two elements
+# print(s[-2:])
+# print(s[2::2])
+# print(s[2:15:2])
 
-print(s.replace("a", "b"))
-print(s.count("a"))
-print(s)
-
-print(arr.append(5))
-print(arr.count(1))
-print(arr.remove(3))
-print(arr.pop(0))
-print(arr.reverse())
+arr = ["1", "2", "3", "4", "5"]
+a = "".join(arr)
+print(a)
