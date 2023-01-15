@@ -1,20 +1,12 @@
-# if (логическое выражение):
-# 	...
-# elif ():
-#   ...
-# elif (логическое выражение):
-#   ...
-# else:
-# 	...
+s = "arman"
+arr = [1, 2, 3, 4]
 
-# Форматированные строки:
+print(s.replace("a", "b"))
+print(s.count("a"))
+print(s)
 
-age = int(input())
-name = input()
-
-if age >= 18:
-	print(f"Проходи {name}")  # f - formatted
-elif age >= 16:
-	print(f"На первый раз прощаю")
-else:
-	print(f"Пошел нахуй мелкий")
+print(arr.append(5))
+print(arr.count(1))
+print(arr.remove(3))
+print(arr.pop(0))
+print(arr.reverse())
