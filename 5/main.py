@@ -50,3 +50,71 @@
 # 	if result > 40:
 # 		print(n)
 # 		break
+
+# 46963
+# for n in range(2, 10000):
+# 	s = bin(n)[2:]
+# 	count_ones = 0
+# 	count_zeros = 0
+# 	for i in range(len(s)):
+# 		if (i % 2 != 0) and (s[i] == "1"):
+# 			count_ones += 1
+# 		elif (i % 2 == 0) and (s[i] == "0"):
+# 			count_zeros += 1
+# 	if abs(count_ones - count_zeros) == 5:
+# 		print(n)
+# 		break
+
+# 5834 KPolyakov
+# from collections import Counter
+# for n in range(1_000_000):
+# 	s = hex(n)[2:]
+# 	if n % 2 == 0:
+# 		s += "f"
+# 	else:
+# 		s += "0"
+# 	c = s
+#
+# 	c = c.replace("a", "10")
+# 	c = c.replace("b", "11")
+# 	c = c.replace("c", "12")
+# 	c = c.replace("d", "13")
+# 	c = c.replace("e", "14")
+# 	c = c.replace("f", "15")
+#
+# 	c_sum = sum([int(x) for x in tuple(c)]) % 16
+# 	s += hex(c_sum)[2:]
+#
+# 	g = s
+#
+# 	g = g.replace("a", "10")
+# 	g = g.replace("b", "11")
+# 	g = g.replace("c", "12")
+# 	g = g.replace("d", "13")
+# 	g = g.replace("e", "14")
+# 	g = g.replace("f", "15")
+#
+# 	g_sum = sum([int(x) for x in tuple(g)]) % 16
+# 	s += hex(g_sum)[2:]
+#
+# 	answer = dict(Counter(s))
+#
+# 	if max(answer.values()) > min(answer.values()) * 5:
+# 		print(n)
+# 		break
+
+# 15128
+# for i in range(9676, 9678):
+# 	# s = str(i)
+# 	# f_s = int(s[0]) + int(s[1])
+# 	digits = [int(x) for x in list(str(i))]  # list comprehension (генератор списка)
+# 	# i = 1357 => str(i) = "1357" =>
+# 	# list(str(i)) => ["1", "3", "5", "7"]
+# 	# int(x) для каждого x из list(str(i)) => digits.append
+# 	result = [digits[0] + digits[1], digits[1] + digits[2], digits[2] + digits[3]]
+# 	result.remove(min(result))
+# 	result.sort()
+# 	r = str(result[0]) + str(result[1])
+# 	if r == "1315":
+# 		print(i)
+
