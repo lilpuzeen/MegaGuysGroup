@@ -14,9 +14,9 @@
 #         for z in range (0,2):
 #             if (x == y) or (x <= (y or z)) == 0:
 #                 print(x, y, z)
-# #Ответ: yzw '''
+# #Ответ: yzw
 #
-#3 задание
+# 3 задание
 # print('x y z w')
 # for x in range (0,2):
 #     for y in range (0,2):
