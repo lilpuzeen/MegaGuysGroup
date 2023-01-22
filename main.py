@@ -23,8 +23,8 @@
 # arr1 = [i**2 for i in range(1, 11)]
 # arr2 = [i**0.5 for i in range(1, 11)]
 # arr3 = [i for i in range(1, 11) if i % 2 != 0]
-arr4 = [(2*i - 1) for i in range(1, 11)]
-s = "136548"
+# arr4 = [(2*i - 1) for i in range(1, 11)]
+# s = "136548"
 # arr5 = [int(i) for i in list(s)]
 # заполнить arr квадратами чисел от 1 до 10 вкл.
 # for i in range(1, 11):
@@ -32,3 +32,6 @@ s = "136548"
 
 # print(help(list))
 # print(dir(str))
+
+# arr = [int(x) for x in open("test.txt")]
+# print(arr[0] + arr[2])
