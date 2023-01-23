@@ -118,3 +118,33 @@
 # 	if r == "1315":
 # 		print(i)
 
+
+# Statgrad 2210201
+# def sum_bin(x):
+# 	return sum([int(i) for i in list(str(x))]) % 2 == 0
+#
+#
+# for n in range(1_000):
+# 	r = bin(n)[2:]
+# 	if sum_bin(n):
+# 		r += "0"
+# 	else:
+# 		r += "1"
+#
+# 	a = int(r, 2)
+# 	if sum_bin(a):
+# 		r += "0"
+# 	else:
+# 		r += "1"
+#
+# 	b = int(r, 2)
+# 	if sum_bin(b):
+# 		r += "0"
+# 	else:
+# 		r += "1"
+#
+# 	c = int(r, 2)
+#
+# 	if c > 1028:
+# 		print(n, c)
+

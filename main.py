@@ -35,3 +35,27 @@
 
 # arr = [int(x) for x in open("test.txt")]
 # print(arr[0] + arr[2])
+
+# lambda Функции. Анонимные функции
+# def print_hello(name):  # default func
+# 	return f"Hello, {name}!"
+
+# func = lambda <var1, var2, ..., var_n>: var1 % 3 == 0
+# f = lambda x, y: x % y == 0
+# # def f(x):
+# # 	return x + 3
+# a = 10
+# b = 5
+# print(f(a, b))
+# Функция высшего порядка -
+# это функция которая может принимать в качестве аргумента другие функции
+# filter, map, reduce
+# filter(func, iterable)
+from random import randint
+arr = [randint(-100, 100) for i in range(1000)]
+# def p(x):
+# 	return x % 5 == 0
+#
+# arr_5 = list(filter(p, arr))
+arr_5 = list(filter(lambda x: x % 5 == 0, arr))
+print(arr_5)
