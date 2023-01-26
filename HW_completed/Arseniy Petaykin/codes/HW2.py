@@ -28,9 +28,9 @@
 
 # # Задание 5 (№27535)
 
-for n in range(4, 1000):
-    r = bin(n)[2:]
-    r = r + r[1] + r[0]
-    print(int(r, 2), n)
+# for n in range(4, 1000):
+#     r = bin(n)[2:]
+#     r = r + r[1] + r[0]
+#     print(int(r, 2), n)
 
 # Ответ:23
