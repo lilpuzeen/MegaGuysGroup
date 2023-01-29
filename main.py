@@ -51,11 +51,16 @@
 # это функция которая может принимать в качестве аргумента другие функции
 # filter, map, reduce
 # filter(func, iterable)
-from random import randint
-arr = [randint(-100, 100) for i in range(1000)]
-# def p(x):
-# 	return x % 5 == 0
-#
-# arr_5 = list(filter(p, arr))
-arr_5 = list(filter(lambda x: x % 5 == 0, arr))
-print(arr_5)
+# from random import randint
+# arr = [randint(-100, 100) for i in range(1000)]
+# # def p(x):
+# # 	return x % 5 == 0
+# #
+# # arr_5 = list(filter(p, arr))
+# arr_5 = list(filter(lambda x: x % 5 == 0, arr))
+# print(arr_5)
+
+# for  # если for-loop не закончился break-ом, то выполняется блок else:
+#   ...
+# else:
+#   ...
