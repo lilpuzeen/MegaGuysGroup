@@ -59,13 +59,13 @@
 #  Ответ 46
 # 5 задание int(s[0]) + int(s[1])
 #str(min((int(s[0]) + int(s[1]), int(s[1]) + int(s[2])))+str(max((int(s[0]) + int(s[1]), int(s[1]) + int(s[2])))
-for n in range(100,1000):
-    r = str(n)
-    g = str(min(int(r[0]) + int(r[1]), (int(r[1])+ int(r[2])))) + str(max((int(r[0])+ int(r[1])),(int(r[1])+ int(r[2]))))
-    if g == '812':
-       print(g)
-       print(n)
-       break
+# for n in range(100,1000):
+#     r = str(n)
+#     g = str(min(int(r[0]) + int(r[1]), (int(r[1])+ int(r[2])))) + str(max((int(r[0])+ int(r[1])),(int(r[1])+ int(r[2]))))
+#     if g == '812':
+#        print(g)
+#        print(n)
+#        break
 # я не понимаю в чем ошибка
 
 # 6 extra задание, обязательное к выполнению, иначе 0 баллов за ДЗ

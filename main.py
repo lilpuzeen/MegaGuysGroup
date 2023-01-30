@@ -33,7 +33,7 @@
 # print(help(list))
 # print(dir(str))
 
-# arr = [int(x) for x in open("test.txt")]
+# arr = [int(x) for x in open("requirements.txt")]
 # print(arr[0] + arr[2])
 
 # lambda Функции. Анонимные функции
@@ -51,11 +51,16 @@
 # это функция которая может принимать в качестве аргумента другие функции
 # filter, map, reduce
 # filter(func, iterable)
-from random import randint
-arr = [randint(-100, 100) for i in range(1000)]
-# def p(x):
-# 	return x % 5 == 0
-#
-# arr_5 = list(filter(p, arr))
-arr_5 = list(filter(lambda x: x % 5 == 0, arr))
-print(arr_5)
+# from random import randint
+# arr = [randint(-100, 100) for i in range(1000)]
+# # def p(x):
+# # 	return x % 5 == 0
+# #
+# # arr_5 = list(filter(p, arr))
+# arr_5 = list(filter(lambda x: x % 5 == 0, arr))
+# print(arr_5)
+
+# for  # если for-loop не закончился break-ом, то выполняется блок else:
+#   ...
+# else:
+#   ...
