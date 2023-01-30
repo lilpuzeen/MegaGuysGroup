@@ -33,7 +33,7 @@
 # print(help(list))
 # print(dir(str))
 
-# arr = [int(x) for x in open("test.txt")]
+# arr = [int(x) for x in open("requirements.txt")]
 # print(arr[0] + arr[2])
 
 # lambda Функции. Анонимные функции
