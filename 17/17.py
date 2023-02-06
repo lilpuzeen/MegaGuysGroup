@@ -60,18 +60,55 @@
 # print(count, maxx)
 
 # Statgrad
-arr = [int(x) for x in open("statgrad_17.txt")]
+# arr = [int(x) for x in open("statgrad_17.txt")]
+# count = 0
+# maxx_squares = 0
+# # min_5 = min(list(filter(lambda x: str(x)[-1] == "5", arr)))
+# min_5 = float("+inf")
+# for i in range(len(arr)):
+# 	if str(arr[i])[-1] == "5":
+# 		min_5 = min(min_5, arr[i])
+# # print(min_5)
+# for i in range(len(arr) - 1):
+# 	a, b = sorted([arr[i], arr[i + 1]])
+# 	if (str(a)[-1] == "5") and (a**2 + b**2) < min_5**2:
+# 		count += 1
+# 		maxx_squares = max(maxx_squares, a**2 + b**2)
+# print(count, maxx_squares)
+
+# 5802 KP
+# func: int (число) -> int (произведение его цифр)
+def digit_mul(x):
+	answer = 1
+	for digit in str(x):  # 123 (int) -> "123" (str)
+		answer *= int(digit)
+	return answer
+
+
+# 83*8*
+# max -> 83997
+def satisfies_mask(x: int) -> bool:
+	x = str(x)
+	if (len(x) >= 3) and (x[0] == "8") and (x[1] == "3"):
+		for i in range(2, len(x)):
+			if x[i] == "8":
+				break
+			else:
+				continue
+		else:
+			return False
+	else:
+		return False
+	return True
+
+
+arr = [int(x) for x in open("5802_kp.txt")]
 count = 0
-maxx_squares = 0
-# min_5 = min(list(filter(lambda x: str(x)[-1] == "5", arr)))
-min_5 = float("+inf")
-for i in range(len(arr)):
-	if str(arr[i])[-1] == "5":
-		min_5 = min(min_5, arr[i])
-# print(min_5)
-for i in range(len(arr) - 1):
-	a, b = sorted([arr[i], arr[i + 1]])
-	if (str(a)[-1] == "5") and (a**2 + b**2) < min_5**2:
+maxx = float("-inf")
+for i in range(len(arr) - 2):
+	a, b, c = arr[i], arr[i + 1], arr[i + 2]
+	mul = digit_mul(a) * digit_mul(b) * digit_mul(c)
+	if mul <= 2*10**9 and satisfies_mask(mul):
 		count += 1
-		maxx_squares = max(maxx_squares, a**2 + b**2)
-print(count, maxx_squares)
+		maxx = max(maxx, mul)
+print(count, maxx)
