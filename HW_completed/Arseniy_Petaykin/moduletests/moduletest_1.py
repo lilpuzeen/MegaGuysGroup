@@ -28,4 +28,3 @@
 # result = calc(c, 10, 6)
 # print(result.count('5'))
 # Ответ: 8
-
