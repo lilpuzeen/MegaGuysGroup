@@ -66,3 +66,18 @@
 #   ...
 
 # if <лог.выражение>:
+
+
+# Enumerate
+# arr = [...]
+# arr = ["a", "b", "c", "d"]
+# for i, letter in enumerate(arr):
+# 	print(i, letter)
+
+# arr = ["a", "b", "c", "d"]
+# print(" ".join(arr))
+
+# all - AND
+# any - OR
+arr = [True, True, True, False]
+print(all(arr), any(arr))
